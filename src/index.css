@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply m-0 font-sans antialiased;
+    font-family: 'Exo', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white font-semibold px-6 py-3 rounded-3xl transition-all duration-fast hover:bg-primary-very-dark active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-purple text-white font-semibold px-6 py-3 rounded-3xl transition-all duration-fast hover:bg-purple-light active:scale-95;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary font-semibold px-6 py-3 rounded-3xl transition-all duration-fast hover:bg-primary hover:text-white active:scale-95;
+  }
+  
+  .card {
+    @apply bg-white rounded-3xl p-6 shadow-md;
+  }
+  
+  .link {
+    @apply text-primary underline font-medium hover:text-primary-very-dark transition-colors;
+  }
+  
+  .logo-primary-color {
+    /* CSS filter to convert white logo to primary green (#12705F) */
+    filter: brightness(0) saturate(100%) invert(24%) sepia(89%) saturate(1234%) hue-rotate(135deg) brightness(95%) contrast(88%);
+  }
+  
+  .app-store-button {
+    /* Neumorphic style app store button with primary green color */
+    background: linear-gradient(145deg, #083E34, #12705F);
+    border-radius: 12px;
+    box-shadow: 
+      8px 8px 16px rgba(0, 0, 0, 0.3),
+      -4px -4px 8px rgba(255, 255, 255, 0.05);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 180px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .app-store-button:hover {
+    box-shadow: 
+      4px 4px 8px rgba(0, 0, 0, 0.25),
+      -2px -2px 4px rgba(255, 255, 255, 0.08);
+    transform: translateY(2px);
+    background: linear-gradient(145deg, #14705F, #083E34);
+  }
+  
+  .app-store-button:active {
+    box-shadow: 
+      inset 4px 4px 8px rgba(0, 0, 0, 0.4),
+      inset -2px -2px 4px rgba(255, 255, 255, 0.05);
+    transform: translateY(1px);
+  }
+}
