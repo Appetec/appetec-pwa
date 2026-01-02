@@ -232,7 +232,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc pl-6 mb-4 space-y-2 text-body-regular text-gray-700">
               <li><Link to="/terms" className="link">Terms and Conditions of Use</Link></li>
               <li><Link to="/account-deletion" className="link">Account Deletion Request</Link></li>
-              <li>Data & Consent Policy (available in the app)</li>
+              {/* <li>Data & Consent Policy (available in the app)</li> */}
             </ul>
           </section>
         </div>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-
+import Appetec_logo from '/assets/appetec_logo.png'
 export default function Layout({ children }) {
   const location = useLocation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,14 +13,9 @@ export default function Layout({ children }) {
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center ">
               <img 
-                src="/assets/favicon.png" 
+                src={Appetec_logo} 
                 alt="Appetec" 
-                className="h-12 w-12 object-cover"
-              />
-              <img 
-                src="/assets/name_logo.png" 
-                alt="Appetec" 
-                className="h-8 object-contain logo-primary-color"
+                className="h-12 w-auto object-cover logo-primary-color"
               />
             </Link>
             

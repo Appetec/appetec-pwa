@@ -14,7 +14,7 @@ export default function Home() {
             manage your sleep, and achieve your wellness goals all in one place.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/terms" className="btn-primary">
+            <Link to="/terms" className="btn-outline">
               View Terms & Conditions
             </Link>
             <Link to="/privacy" className="btn-outline">
@@ -28,7 +28,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <h2 className="text-heading-2 text-center text-primary mb-12">
           Key Features
         </h2>
