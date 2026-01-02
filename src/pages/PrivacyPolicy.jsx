@@ -186,6 +186,21 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-8">
+            <h2 className="text-heading-3 text-primary mb-4">Arbitration and Class Action Waiver</h2>
+            <p className="text-body-regular text-gray-700 mb-4 leading-relaxed">
+              You, the User of the Appetec Wellness App, agree to submit to mandatory binding arbitration any and all claims 
+              arising out of or related to your use of Appetec Wellness App, except that you or Appetec may, at its, his or her 
+              option, seek injunctive relief in court related to the improper use, disclosure or misappropriation of a party's 
+              private, proprietary, confidential or trade secret information (collectively, "arbitrable claims").
+            </p>
+            <p className="text-body-regular text-gray-700 mb-4 leading-relaxed">
+              Further, to the fullest extent permitted by law, you agree that no class or collective actions can be asserted in 
+              arbitration or otherwise. All claims, whether in arbitration or otherwise, must be brought solely in your individual 
+              capacity, and not as a plaintiff or class member in any purported class or collective proceeding.
+            </p>
+          </section>
+
+          <section className="mb-8">
             <h2 className="text-heading-3 text-primary mb-4">Changes to This Privacy Policy</h2>
             <p className="text-body-regular text-gray-700 mb-4 leading-relaxed">
               We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy 
@@ -216,8 +231,8 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="list-disc pl-6 mb-4 space-y-2 text-body-regular text-gray-700">
               <li><Link to="/terms" className="link">Terms and Conditions of Use</Link></li>
+              <li><Link to="/account-deletion" className="link">Account Deletion Request</Link></li>
               <li>Data & Consent Policy (available in the app)</li>
-              <li>Arbitration and Class Action Waiver Policy (available in the app)</li>
             </ul>
           </section>
         </div>

@@ -295,6 +295,14 @@ export default function TermsAndConditions() {
               <p className="text-body-regular text-gray-700">Phone: [Phone Number]</p>
             </div>
           </section>
+
+          <section className="mb-8 bg-primary-very-light p-6 rounded-lg">
+            <h2 className="text-heading-3 text-primary mb-4">Related Policies</h2>
+            <ul className="list-disc pl-6 space-y-2 text-body-regular text-gray-700">
+              <li><Link to="/privacy" className="link">Privacy Policy</Link></li>
+              <li><Link to="/account-deletion" className="link">Account Deletion Request</Link></li>
+            </ul>
+          </section>
         </div>
       </div>
     </div>
