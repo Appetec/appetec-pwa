@@ -153,10 +153,22 @@ export default function Layout({ children }) {
               </p>
             </div>
           </div>
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center">
+          <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-body-small text-gray-400">
               © {new Date().getFullYear()} Appetec. All rights reserved.
             </p>
+            <a
+              href="https://platform.fatsecret.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Powered by fatsecret Platform API"
+            >
+              <img
+                src="https://platform.fatsecret.com/api/static/images/powered_by_fatsecret_horizontal_white.png"
+                alt="Powered by fatsecret Platform API"
+                style={{ height: 30, width: 'auto' }}
+              />
+            </a>
           </div>
         </div>
       </footer>
